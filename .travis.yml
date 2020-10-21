@@ -67,7 +67,7 @@ matrix:
     before_install:
       - sudo pkg upgrade -y gcc10-devel
   - <<: *freebsd_common
-    name: "Clang Static Analyzer"
+    name: "Clang 11 Static Analyzer"
     env: WRAPPER="scan-build11 --status-bugs"
     before_install:
       - sudo pkg install -y llvm11
